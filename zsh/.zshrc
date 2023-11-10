@@ -73,7 +73,6 @@ ZSH_THEME="awesomepanda"
 plugins=(
 	aliases
 	git
-	nvm
 	zsh-autosuggestions
 	zsh-syntax-highlighting
 )
