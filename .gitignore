@@ -39,6 +39,8 @@ luac.out
 *.x86_64
 *.hex
 
+.DS_Store
+
 state.yml
 packer_compiled.lua
 __pycache__/
