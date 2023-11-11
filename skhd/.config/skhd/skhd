@@ -1,0 +1,76 @@
+#    █████████  █████   ████ █████   █████ ██████████  
+#   ███░░░░░███░░███   ███░ ░░███   ░░███ ░░███░░░░███ 
+#  ░███    ░░░  ░███  ███    ░███    ░███  ░███   ░░███
+#  ░░█████████  ░███████     ░███████████  ░███    ░███
+#   ░░░░░░░░███ ░███░░███    ░███░░░░░███  ░███    ░███
+#   ███    ░███ ░███ ░░███   ░███    ░███  ░███    ███ 
+#  ░░█████████  █████ ░░████ █████   █████ ██████████  
+#   ░░░░░░░░░  ░░░░░   ░░░░ ░░░░░   ░░░░░ ░░░░░░░░░░   
+
+# example binds, see https://github.com/koekeishiya/skhd/blob/master/examples/skhdrc
+
+# yabai management
+ctrl + alt - q : brew services stop yabai
+ctrl + alt - s : brew services start yabai
+ctrl + alt - r : brew services restart yabai
+
+# general window management
+alt - r : yabai -m space --rotate 90
+
+alt - x : yabai -m window --close
+
+alt - t : yabai -m window --toggle float
+alt - e : yabai -m window --toggle split
+
+alt - f : yabai -m window --toggle zoom-fullscreen
+alt - d : yabai -m window --toggle zoom-parent
+
+# send window to monitor and follow focus
+alt - 1 : yabai -m window --display 1
+alt - 2 : yabai -m window --display 2
+alt - 3 : yabai -m window --display 3
+alt - 4 : yabai -m window --display 4
+alt - 5 : yabai -m window --display 5
+alt - 6 : yabai -m window --display 6
+alt - 7 : yabai -m window --display 7
+
+# change focus between external displays (left and right)
+ctrl - h : yabai -m display --focus west
+ctrl - l : yabai -m display --focus east
+
+# change window focus within space
+alt - h : yabai -m window --focus west || yabai -m window --focus stack.prev || yabai -m window --focus stack.last
+alt - j : yabai -m window --focus south
+alt - k : yabai -m window --focus north
+alt - l : yabai -m window --focus east || yabai -m window --focus stack.next || yabai -m window --focus stack.first
+
+# move window
+alt + ctrl - h : yabai -m window --warp west
+alt + ctrl - j : yabai -m window --warp south
+alt + ctrl - k : yabai -m window --warp north
+alt + ctrl - l : yabai -m window --warp east
+
+# swap window
+alt + shift - h : yabai -m window --swap west
+alt + shift - j : yabai -m window --swap south
+alt + shift - k : yabai -m window --swap north
+alt + shift - l : yabai -m window --swap east
+
+# rotate layout clockwise
+shift + alt - r : yabai -m space --rotate 270
+
+# flip along y-axis
+shift + alt - y : yabai -m space --mirror y-axis
+
+# flip along x-axis
+shift + alt - x : yabai -m space --mirror x-axis
+
+# toggle window float
+shift + alt - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
+
+# balance out tree of windows (resize to occupy same area)
+shift + alt - b : yabai -m space --balance
+
+# apps
+alt - return : open kitty
+alt - b : open -n -a "Google Chrome"
