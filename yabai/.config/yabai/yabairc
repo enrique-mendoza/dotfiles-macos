@@ -1,11 +1,10 @@
-#   █████ █████   █████████   ███████████    █████████   █████
-#  ░░███ ░░███   ███░░░░░███ ░░███░░░░░███  ███░░░░░███ ░░███ 
-#   ░░███ ███   ░███    ░███  ░███    ░███ ░███    ░███  ░███ 
-#    ░░█████    ░███████████  ░██████████  ░███████████  ░███ 
-#     ░░███     ░███░░░░░███  ░███░░░░░███ ░███░░░░░███  ░███ 
-#      ░███     ░███    ░███  ░███    ░███ ░███    ░███  ░███ 
-#      █████    █████   █████ ███████████  █████   █████ █████
-#     ░░░░░    ░░░░░   ░░░░░ ░░░░░░░░░░░  ░░░░░   ░░░░░ ░░░░░ 
+#   ██╗   ██╗ █████╗ ██████╗  █████╗ ██╗
+#   ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗██║
+#    ╚████╔╝ ███████║██████╔╝███████║██║
+#     ╚██╔╝  ██╔══██║██╔══██╗██╔══██║██║
+#      ██║   ██║  ██║██████╔╝██║  ██║██║
+#      ╚═╝   ╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝
+#                                       
 
 # for this to work you must configure sudo such that
 # it will be able to run the command without password
@@ -51,12 +50,10 @@ yabai -m config left_padding                 8
 yabai -m config window_gap                   8
 
 # space 1: terminals
-yabai -m space 1 --layout stack
 yabai -m rule --add app="iTerm2" space=^1
 yabai -m rule --add app="kitty" space=^1
 
 # space 2: development
-yabai -m space 2 --layout stack
 yabai -m rule --add app="IntelliJ IDEA.*" space=^2
 yabai -m rule --add app="IntelliJ IDEA.*" title="Preferences" space=^2 manage=off
 yabai -m rule --add app="Visual Studio Code.*" space=^2

@@ -1,18 +1,17 @@
-#    █████████  █████   ████ █████   █████ ██████████  
-#   ███░░░░░███░░███   ███░ ░░███   ░░███ ░░███░░░░███ 
-#  ░███    ░░░  ░███  ███    ░███    ░███  ░███   ░░███
-#  ░░█████████  ░███████     ░███████████  ░███    ░███
-#   ░░░░░░░░███ ░███░░███    ░███░░░░░███  ░███    ░███
-#   ███    ░███ ░███ ░░███   ░███    ░███  ░███    ███ 
-#  ░░█████████  █████ ░░████ █████   █████ ██████████  
-#   ░░░░░░░░░  ░░░░░   ░░░░ ░░░░░   ░░░░░ ░░░░░░░░░░   
+#   ███████╗██╗  ██╗██╗  ██╗██████╗ 
+#   ██╔════╝██║ ██╔╝██║  ██║██╔══██╗
+#   ███████╗█████╔╝ ███████║██║  ██║
+#   ╚════██║██╔═██╗ ██╔══██║██║  ██║
+#   ███████║██║  ██╗██║  ██║██████╔╝
+#   ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ 
+#                                   
 
 # example binds, see https://github.com/koekeishiya/skhd/blob/master/examples/skhdrc
 
 # yabai management
-ctrl + alt - q : brew services stop yabai
-ctrl + alt - s : brew services start yabai
-ctrl + alt - r : brew services restart yabai
+ctrl + alt - q : yabai --stop-service
+ctrl + alt - s : yabai --start-service
+ctrl + alt - r : yabai --restart-service
 
 # general window management
 alt - r : yabai -m space --rotate 90
@@ -25,6 +24,18 @@ alt - e : yabai -m window --toggle split
 alt - f : yabai -m window --toggle zoom-fullscreen
 alt - d : yabai -m window --toggle zoom-parent
 
+# focus previous space by mission-control index if one exists, otherwise focus the last space
+alt - 0x2F : yabai -m space --focus prev || yabai -m space --focus last
+
+# focus next space by mission-control index if one exists, otherwise focus the first space
+alt - 0x2B : yabai -m space --focus next || yabai -m space --focus first
+
+# Create space on the active display
+alt - o : yabai -m space --create
+
+# Delete focused space and focus first space on display
+alt - y : yabai -m space --destroy
+
 # send window to monitor and follow focus
 alt - 1 : yabai -m window --display 1
 alt - 2 : yabai -m window --display 2
@@ -33,10 +44,6 @@ alt - 4 : yabai -m window --display 4
 alt - 5 : yabai -m window --display 5
 alt - 6 : yabai -m window --display 6
 alt - 7 : yabai -m window --display 7
-
-# change focus between external displays (left and right)
-ctrl - h : yabai -m display --focus west
-ctrl - l : yabai -m display --focus east
 
 # change window focus within space
 alt - h : yabai -m window --focus west || yabai -m window --focus stack.prev || yabai -m window --focus stack.last
@@ -72,5 +79,4 @@ shift + alt - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
 shift + alt - b : yabai -m space --balance
 
 # apps
-alt - return : open kitty
-alt - b : open -n -a "Google Chrome"
+alt - b : open /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
