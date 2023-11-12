@@ -66,3 +66,4 @@ yabai -m rule --add app="Google Chrome" space=^3
 yabai -m rule --add title="JetBrains Toolbox" manage=off mouse_follows_focus=off
 yabai -m rule --add app="System Settings" manage=off
 yabai -m rule --add app="Finder" manage=off
+yabai -m rule --add app="AlDente" manage=off
