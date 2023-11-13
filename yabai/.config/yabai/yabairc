@@ -63,9 +63,11 @@ yabai -m rule --add app="Visual Studio Code.*" title="Preferences" space=^2 mana
 yabai -m rule --add app="Google Chrome" space=^3
 
 # things which create floating children
-yabai -m rule --add title="JetBrains Toolbox" manage=off mouse_follows_focus=off
-yabai -m rule --add title="Project Structure" manage=off
-yabai -m rule --add title="Settings" manage=off
 yabai -m rule --add app="System Settings" manage=off
 yabai -m rule --add app="Finder" manage=off
 yabai -m rule --add app="AlDente" manage=off
+yabai -m rule --add title="JetBrains Toolbox" manage=off mouse_follows_focus=off
+yabai -m rule --add title="Welcome to IntelliJ IDEA" manage=off
+yabai -m rule --add title="Project Structure" manage=off
+yabai -m rule --add title="Settings" manage=off
+
