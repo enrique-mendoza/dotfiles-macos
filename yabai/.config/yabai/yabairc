@@ -75,8 +75,11 @@ yabai -m rule --add title="Connection test" manage=off
 yabai -m rule --add title="Driver settings" manage=off
 
 # idea
+yabai -m rule --add title="Add File to Git" manage=off
+yabai -m rule --add title="Delete" manage=off
 yabai -m rule --add title="JetBrains Toolbox" manage=off mouse_follows_focus=off
 yabai -m rule --add title="New Project" manage=off
+yabai -m rule --add title="Move" manage=off
 yabai -m rule --add title="Project Structure" manage=off
 yabai -m rule --add title="Preferences" manage=off
 yabai -m rule --add title="Rename" manage=off
