@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 # Custom lists (exa is unmaintained, use eza instead)
 # alias ls="exa --icons --color=always --group-directories-first"
 # alias lst="exa --icons --color=always --tree --level=2 --long"

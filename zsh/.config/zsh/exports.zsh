@@ -1,3 +1,8 @@
+#!/usr/bin/env sh
+
+export EDITOR="nvim"
+export TERMINAL="kitty"
+
 # FNM
 eval "$(fnm env --use-on-cd)"
 

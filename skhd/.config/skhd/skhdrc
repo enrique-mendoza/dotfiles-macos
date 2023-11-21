@@ -6,33 +6,47 @@
 #   ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ 
 #                                   
 
-# example binds, see https://github.com/koekeishiya/yabai/blob/master/examples/skhdrc
+# Example binds, see https://github.com/koekeishiya/yabai/blob/master/examples/skhdrc
 
-# general window management
-alt - t : yabai -m window --toggle float
+# -- General Window Management --
 alt + shift - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
+alt - t : yabai -m window --toggle float
 alt - e : yabai -m window --toggle split
 alt - f : yabai -m window --toggle zoom-fullscreen
 alt - d : yabai -m window --toggle zoom-parent
 
 alt - x : yabai -m window --close
 
-# space management
+# -- Display Management --
+ctrl - h : yabai -m display --focus prev
+ctrl - l : yabai -m display --focus next
+
+# send window to monitor and follow focus
+alt - 1 : yabai -m window --display 1 && yabai -m display --focus 1
+alt - 2 : yabai -m window --display 2 && yabai -m display --focus 2
+
+# -- Space Management --
 alt - o : yabai -m space --create && yabai -m space --focus last
 alt - y : yabai -m space --destroy
 
-alt - 0x2F : yabai -m space --focus prev || yabai -m space --focus last
-alt - 0x2B : yabai -m space --focus next || yabai -m space --focus first
+# move window to space #
+alt + shift - 1 : yabai -m window --space 1;
+alt + shift - 2 : yabai -m window --space 2;
+alt + shift - 3 : yabai -m window --space 3;
+alt + shift - 4 : yabai -m window --space 4;
+alt + shift - 5 : yabai -m window --space 5;
+alt + shift - 6 : yabai -m window --space 6;
+alt + shift - 7 : yabai -m window --space 7;
 
-# send window to monitor and follow focus
-alt - 1 : yabai -m window --display 1
-alt - 2 : yabai -m window --display 2
-alt - 3 : yabai -m window --display 3
-alt - 4 : yabai -m window --display 4
-alt - 5 : yabai -m window --display 5
-alt - 6 : yabai -m window --display 6
-alt - 7 : yabai -m window --display 7
+# move window to prev and next space
+alt + shift - 0x2B : yabai -m window --space prev;
+alt + shift - 0x2F : yabai -m window --space next;
 
+# switch between spaces
+alt - 0x2B : yabai -m space --focus prev || yabai -m space --focus first
+alt - 0x2F : yabai -m space --focus next || yabai -m space --focus last
+
+# -- Window Management --
 # change window focus within space
 alt - h : yabai -m window --focus west || yabai -m window --focus stack.prev || yabai -m window --focus stack.last
 alt - j : yabai -m window --focus south
@@ -65,7 +79,7 @@ shift + ctrl - j : yabai -m window --resize top:0:20
 # balance out tree of windows (resize to occupy same area)
 shift + ctrl - r : yabai -m space --balance
 
-# yabai management
+# -- Window Management --
 ctrl + alt - s : yabai --start-service
 ctrl + alt - r : yabai --restart-service
 ctrl + alt - q : yabai --stop-service
