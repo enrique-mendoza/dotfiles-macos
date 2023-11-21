@@ -67,4 +67,4 @@ yabai -m rule --add app="DBeaver" title="Connect*.|Version*.|.*settings" manage=
 
 # make JetBrains products popup windows float
 yabai -m rule --add app="IntelliJ IDEA" title="JetBrains Toolbox" manage=off mouse_follows_focus=off
-yabai -m rule --add app="IntelliJ IDEA" title="Delete*.|.*Git*.|New*.|Move*.|.*Structure|Preferences*.|Rename*.|Settings*.|.*Welcome*." manage=off
+yabai -m rule --add app="IntelliJ IDEA" title="Choose*.|Delete*.|Generate*.|.*Git*.|New*.|Move*.|.*Structure|Preferences*.|Rename*.|Select*.|Settings*.|.*Welcome*." manage=off

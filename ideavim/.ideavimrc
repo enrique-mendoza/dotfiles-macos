@@ -168,8 +168,13 @@ map <leader>iv <Action>(IntroduceVariable)
 "   ╚═╝╚═════╝ ╚══════╝╚═╝  ╚═╝    ╚═╝  ╚═╝ ╚═════╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝       ╚═╝     ╚═╝╚═╝  ╚═╝  ╚═══╝  ╚══════╝╚═╝  ╚═══╝
 
 map <leader>Ja <Action>(Maven.DownloadAllSources)
+map <leader>Jc <Action>(GenerateConstructor)
 map <leader>Jd <Action>(QuickJavaDoc)
 map <leader>Jr <Action>(Maven.RunBuild)
+map <leader>Jg <Action>(GenerateGetter)
+map <leader>Jm <Action>(GenerateGetterAndSetter)
+map <leader>Js <Action>(GenerateSetter)
+map <leader>Jx <Action>(Generate)
 
 "   ██╗██████╗ ███████╗ █████╗      █████╗  ██████╗████████╗██╗ ██████╗ ███╗   ██╗███████╗       ███╗   ███╗ █████╗ ██████╗ ██╗  ██╗
 "   ██║██╔══██╗██╔════╝██╔══██╗    ██╔══██╗██╔════╝╚══██╔══╝██║██╔═══██╗████╗  ██║██╔════╝██╗    ████╗ ████║██╔══██╗██╔══██╗██║ ██╔╝
@@ -305,8 +310,13 @@ let g:WhichKeyDesc_comment_by_line_comment = "<leader>/ Comment"
 
 let g:WhichKeyDesc_java = "<leader>J Java"
 let g:WhichKeyDesc_maven_download_all_sources = "<leader>Ja Maven Download All Sources"
+let g:WhichKeyDesc_generate_constructor = "<leader>Jc Generate Constructor"
 let g:WhichKeyDesc_maven_download_run_build = "<leader>Jr Maven Run Build"
 let g:WhichKeyDesc_quick_javadoc = "<leader>Jd Quick Javadoc"
+let g:WhichKeyDesc_generate_getter = "<leader>Jg Generate Getters"
+let g:WhichKeyDesc_generate_getter_and_setter = "<leader>Jm Generate Getters And Setters"
+let g:WhichKeyDesc_generate_setter = "<leader>Js Generate Setters"
+let g:WhichKeyDesc_generate = "<leader>Jx Generate"
 
 let g:WhichKeyDesc_buffers_editors = "<leader>b Buffers & Editors"
 let g:WhichKeyDesc_next_splitter = "<leader>. Next Splitter"
