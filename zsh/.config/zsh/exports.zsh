@@ -3,6 +3,8 @@
 export EDITOR="nvim"
 export TERMINAL="kitty"
 
+export PATH="$HOME/.local/bin":$PATH
+
 # FNM
 eval "$(fnm env --use-on-cd)"
 

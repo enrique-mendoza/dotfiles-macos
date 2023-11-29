@@ -51,26 +51,26 @@ yabai -m config left_padding 8
 
 yabai -m config window_gap 8
 
-# space 1: terminals
-yabai -m rule --add app="iTerm2" space=^1
-yabai -m rule --add app="kitty" space=^1
+# space 1: communication
+yabai -m space 1 --layout stack
+yabai -m rule --add app="Mattermost" space=^1
+yabai -m rule --add app="Telegram" space=^1
+yabai -m rule --add app="WhatsApp*." space=^1
 
-# space 2: intellij development
-yabai -m rule --add app="IntelliJ IDEA.*" space=^2
+# space 2: db and rest test
+yabai -m space 2 --layout stack
+yabai -m rule --add app="DBeaver" space=^2
+yabai -m rule --add app="Postman" space=^2
 
-# space 3: db and rest test
-yabai -m space 3 --layout stack
-yabai -m rule --add app="DBeaver" space=^3
-yabai -m rule --add app="Postman" space=^3
+# space 3: terminals
+yabai -m rule --add app="iTerm2" space=^3
+yabai -m rule --add app="kitty" space=^3
 
-# space 4: browser
-yabai -m rule --add app="Google Chrome" space=^4
+# space 4: intellij development
+yabai -m rule --add app="IntelliJ IDEA" space=^4
 
-# space 5: communication
-yabai -m space 5 --layout stack
-yabai -m rule --add app="Mattermost" space=^5
-yabai -m rule --add app="Telegram" space=^5
-yabai -m rule --add app="WhatsApp*." space=^5
+# space 5: browser
+yabai -m rule --add app="Google Chrome" space=^5
 
 # things which create floating children
 yabai -m rule --add app="AlDente" manage=off
@@ -79,6 +79,7 @@ yabai -m rule --add app="Cursor Pro" manage=off
 yabai -m rule --add app="Finder" manage=off
 yabai -m rule --add app="iStat Menus" manage=off mouse_follows_focus=off
 yabai -m rule --add app="JetBrains Toolbox" manage=off mouse_follows_focus=off
+yabai -m rule --add app="Logi Options" manage=off mouse_follows_focus=off
 yabai -m rule --add app="Notes" manage=off
 yabai -m rule --add app="System Settings" manage=off
 yabai -m rule --add app="Tips" manage=off
@@ -88,4 +89,4 @@ yabai -m rule --add app="DBeaver" title="Connect*.|Version*.|.*settings" manage=
 
 # make JetBrains products popup windows float
 yabai -m rule --add app="IntelliJ IDEA" title="JetBrains Toolbox" manage=off mouse_follows_focus=off
-yabai -m rule --add app="IntelliJ IDEA" title="Choose*.|Delete*.|Generate*.|.*Git*.|New*.|Move*.|.*Structure|Preferences*.|Plugin*.|Rename*.|Select*.|Settings*.|.*Welcome*." manage=off
+yabai -m rule --add app="IntelliJ IDEA" title=".*Run*.|Choose*.|Delete*.|Generate*.|.*Git*.|New*.|Move*.|.*Structure|Preferences*.|Plugin*.|Rename*.|Select*.|Settings*.|.*Toolbar*.|.*Welcome*." manage=off
