@@ -226,6 +226,7 @@ map <leader>js <Action>(GenerateSetter)
 let g:WhichKeyDesc_lsp = "<leader>l LSP"
 
 let g:WhichKeyDesc_show_intention_actions = "<leader>la Code Actions"
+let g:WhichKeyDesc_optimize_imports = "<leader>lc Optimize Imports"
 let g:WhichKeyDesc_quick_definition = "<leader>ld Definition"
 let g:WhichKeyDesc_show_error_description = "<leader>le Diagnostics"
 let g:WhichKeyDesc_reformat_code = "<leader>lf Format"
@@ -310,7 +311,7 @@ let g:WhichKeyDesc_find = "<leader>sf In File"
 let g:WhichKeyDesc_find_in_path = "<leader>sp In Path"
 let g:WhichKeyDesc_find_usages = "<leader>su Usages"
 
-map <leader>se <Action>(SearchEverywhere)
+map <leader>sf <Action>(Find)
 map <leader>sp <Action>(FindInPath)
 map <leader>su <Action>(FindUsages)
 
