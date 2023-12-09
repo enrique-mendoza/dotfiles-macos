@@ -231,6 +231,7 @@ let g:WhichKeyDesc_quick_definition = "<leader>ld Definition"
 let g:WhichKeyDesc_show_error_description = "<leader>le Diagnostics"
 let g:WhichKeyDesc_reformat_code = "<leader>lf Format"
 let g:WhichKeyDesc_highlight_usages_in_file = "<leader>lh Highlight Usages In File"
+let g:WhichKeyDesc_show_hover_info = "<leader>li Show Hover Info"
 let g:WhichKeyDesc_move_statement_down = "<leader>lj Move Statement Down"
 let g:WhichKeyDesc_move_statement_up = "<leader>lk Move Statement Up"
 let g:WhichKeyDesc_quick_preview = "<leader>lp Preview"
@@ -244,6 +245,7 @@ map <leader>ld <Action>(QuickTypeDefinition)
 map <leader>le <Action>(ShowErrorDescription)
 map <leader>lf <Action>(ReformatCode)
 map <leader>lh <Action>(HighlightUsagesInFile)
+map <leader>li <Action>(ShowHoverInfo)
 map <leader>lj <Action>(MoveStatementDown)
 map <leader>lk <Action>(MoveStatementUp)
 map <leader>lp <Action>(QuickPreview)

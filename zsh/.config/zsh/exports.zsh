@@ -4,6 +4,7 @@ export EDITOR="nvim"
 export TERMINAL="kitty"
 
 export PATH="$HOME/.local/bin":$PATH
+export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin":$PATH
 
 # FNM
 eval "$(fnm env --use-on-cd)"
