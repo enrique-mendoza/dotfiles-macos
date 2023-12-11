@@ -226,7 +226,6 @@ map <leader>js <Action>(GenerateSetter)
 let g:WhichKeyDesc_lsp = "<leader>l LSP"
 
 let g:WhichKeyDesc_show_intention_actions = "<leader>la Code Actions"
-let g:WhichKeyDesc_optimize_imports = "<leader>lc Optimize Imports"
 let g:WhichKeyDesc_quick_definition = "<leader>ld Definition"
 let g:WhichKeyDesc_show_error_description = "<leader>le Diagnostics"
 let g:WhichKeyDesc_reformat_code = "<leader>lf Format"
@@ -234,13 +233,13 @@ let g:WhichKeyDesc_highlight_usages_in_file = "<leader>lh Highlight Usages In Fi
 let g:WhichKeyDesc_show_hover_info = "<leader>li Show Hover Info"
 let g:WhichKeyDesc_move_statement_down = "<leader>lj Move Statement Down"
 let g:WhichKeyDesc_move_statement_up = "<leader>lk Move Statement Up"
+let g:WhichKeyDesc_optimize_imports = "<leader>lo Optimize Imports"
 let g:WhichKeyDesc_quick_preview = "<leader>lp Preview"
 let g:WhichKeyDesc_rename_element = "<leader>lr Rename"
 let g:WhichKeyDesc_quick_type_definition = "<leader>lt Type Definition"
 let g:WhichKeyDesc_show_usages = "<leader>lu Usage"
 
 map <leader>la <Action>(ShowIntentionActions)
-map <leader>lc <Action>(OptimizeImports)
 map <leader>ld <Action>(QuickTypeDefinition)
 map <leader>le <Action>(ShowErrorDescription)
 map <leader>lf <Action>(ReformatCode)
@@ -248,6 +247,7 @@ map <leader>lh <Action>(HighlightUsagesInFile)
 map <leader>li <Action>(ShowHoverInfo)
 map <leader>lj <Action>(MoveStatementDown)
 map <leader>lk <Action>(MoveStatementUp)
+map <leader>lo <Action>(OptimizeImports)
 map <leader>lp <Action>(QuickPreview)
 map <leader>lr <Action>(RenameElement)
 map <leader>lt <Action>(QuickImplementations)
@@ -258,9 +258,9 @@ map <leader>lu <Action>(ShowUsages)
 let g:WhichKeyDesc_mark = "<leader>m Mark"
 
 let g:WhichKeyDesc_goto_next_bookmark = "<leader>mn Next Bookmark"
-let g:WhichKeyDesc_goto_previous_bookmark = "<leader>mp Previous Bokmark"
+let g:WhichKeyDesc_goto_previous_bookmark = "<leader>mp Previous Bookmark"
 let g:WhichKeyDesc_show_bookmark = "<leader>ms Show Bookmarks"
-let g:WhichKeyDes_toggle_bookmark = "<leader>mt Toggle Bookmark"
+let g:WhichKeyDesc_toggle_bookmark = "<leader>mt Toggle Bookmark"
 
 map <leader>mn <Action>(GotoNextBookmark)
 map <leader>mp <Action>(GotoPreviousBookmark)
@@ -289,6 +289,7 @@ map <leader>ps <Action>(GotoSymbol)
 
 let g:WhichKeyDesc_run_options = "<leader>r Configuration & Tools"
 
+let g:WhichKeyDesc_activate_database_tool_window = "<leader>rb Database Tool"
 let g:WhichKeyDesc_choose_run_configuration = "<leader>rc Run Configuration"
 let g:WhichKeyDesc_activate_debug_tool_window = "<leader>rd Debug Tool"
 let g:WhichKeyDesc_run = "<leader>rr Run"
@@ -297,6 +298,7 @@ let g:WhichKeyDesc_activate_unit_tests_tool_window = "<leader>ru Unit Tests Tool
 let g:WhichKeyDesc_navbar_tool_bar = "<leader>rw Run Widget"
 let g:WhichKeyDesc_activate_run_tool_window = "<leader>rx Run Tool"
 
+map <leader>rb <Action>(ActivateDatabaseToolWindow)
 map <Leader>rc <Action>(ChooseRunConfiguration)
 map <leader>rd <Action>(ActivateDebugToolWindow)
 map <leader>rr <Action>(Run)
@@ -338,3 +340,25 @@ let g:WhichKeyDesc_zen_mode = "<leader>vz Zen Mode"
 
 map <leader>vf <Action>(ToggleDistractionFreeMode)
 map <leader>vz <Action>(ToggleZenMode)
+
+let g:WhichKeyDesc_extract_actions = "<leader>x Extract & Introduce"
+
+let g:WhichKeyDesc_inline = "<leader>xa Inline"
+let g:WhichKeyDesc_extract_class = "<leader>xc Extract Class"
+let g:WhichKeyDesc_introduce_field = "<leader>xf Introduce Field"
+let g:WhichKeyDesc_extract_interface = "<leader>xi Extract Interface"
+let g:WhichKeyDesc_extract_method = "<leader>xm Extract Method"
+let g:WhichKeyDesc_introduce_parameter = "<leader>xp Introduce Parameter"
+let g:WhichKeyDesc_extract_superclass = "<leader>xs Extract Superclass"
+let g:WhichKeyDesc_introduce_variable = "<leader>xv Introduce Variable"
+let g:WhichKeyDesc_introduce_constant = "<leader>xx Introduce Constant"
+
+map <Leader>xa <Action>(Inline)
+map <Leader>xc <Action>(ExtractClass)
+map <Leader>xf <Action>(IntroduceField)
+map <Leader>xi <Action>(ExtractInterface)
+map <Leader>xm <Action>(ExtractMethod)
+map <Leader>xp <Action>(IntroduceParameter)
+map <Leader>xs <Action>(ExtractSuperclass)
+map <Leader>xv <Action>(IntroduceVariable)
+map <Leader>xx <Action>(IntroduceConstant)
