@@ -51,26 +51,26 @@ yabai -m config left_padding 8
 
 yabai -m config window_gap 8
 
-# space 1: communication
-yabai -m space 1 --layout stack
-yabai -m rule --add app="Mattermost" space=^1
-yabai -m rule --add app="Telegram" space=^1
-yabai -m rule --add app="WhatsApp*." space=^1
+# space 1: browser
+yabai -m rule --add app="Google Chrome" space=^1
 
-# space 2: db and rest test
-yabai -m space 2 --layout stack
-yabai -m rule --add app="DBeaver" space=^2
-yabai -m rule --add app="Postman" space=^2
+# space 2: intellij development
+yabai -m rule --add app="IntelliJ IDEA" space=^2
 
 # space 3: terminals
 yabai -m rule --add app="iTerm2" space=^3
 yabai -m rule --add app="kitty" space=^3
 
-# space 4: intellij development
-yabai -m rule --add app="IntelliJ IDEA" space=^4
+# space 4: db and rest test
+yabai -m space 4 --layout stack
+yabai -m rule --add app="DBeaver" space=^4
+yabai -m rule --add app="Postman" space=^4
 
-# space 5: browser
-yabai -m rule --add app="Google Chrome" space=^5
+# space 5: communication
+yabai -m space 5 --layout stack
+yabai -m rule --add app="Mattermost" space=^5
+yabai -m rule --add app="Telegram" space=^5
+yabai -m rule --add app="WhatsApp*." space=^5
 
 # things which create floating children
 yabai -m rule --add app="AlDente" manage=off
