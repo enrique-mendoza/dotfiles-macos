@@ -277,6 +277,7 @@ let g:WhichKeyDesc_goto_declaration = "<leader>pd Declaration"
 let g:WhichKeyDesc_goto_file = "<leader>pf File"
 let g:WhichKeyDesc_goto_implementation = "<leader>pi Implementation"
 let g:WhichKeyDesc_goto_symbol = "<leader>ps Symbol"
+let g:WhichKeyDesc_goto_test = "<leader>pt Test"
 
 map <leader>pa <Action>(GotoAction)
 map <leader>pc <Action>(GotoClass)
@@ -284,6 +285,7 @@ map <leader>pd <Action>(GotoDeclaration)
 map <leader>pf <Action>(GotoFile)
 map <leader>pi <Action>(GotoImplementation)
 map <leader>ps <Action>(GotoSymbol)
+map <leader>pt <Action>(GotoTest)
 
 "" Run Configuration: descriptions and maps ---------------------
 
@@ -313,10 +315,12 @@ let g:WhichKeyDesc_search = "<leader>s Search"
 
 let g:WhichKeyDesc_find = "<leader>sf In File"
 let g:WhichKeyDesc_find_in_path = "<leader>sp In Path"
+let g:WhichKeyDesc_switcher = "<leader>ss Switcher"
 let g:WhichKeyDesc_find_usages = "<leader>su Usages"
 
 map <leader>sf <Action>(Find)
 map <leader>sp <Action>(FindInPath)
+map <leader>ss <Action>(Switcher)
 map <leader>su <Action>(FindUsages)
 
 "" UI: descriptions and maps ---------------------
