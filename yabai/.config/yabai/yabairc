@@ -54,12 +54,12 @@ yabai -m config window_gap 8
 # space 1: browser
 yabai -m rule --add app="Google Chrome" space=^1
 
-# space 2: intellij development
-yabai -m rule --add app="IntelliJ IDEA" space=^2
+# space 2: terminals
+yabai -m rule --add app="iTerm2" space=^2
+yabai -m rule --add app="kitty" space=^2
 
-# space 3: terminals
-yabai -m rule --add app="iTerm2" space=^3
-yabai -m rule --add app="kitty" space=^3
+# space 3: development
+yabai -m rule --add app="IntelliJ IDEA" space=^3
 
 # space 4: db and rest test
 yabai -m space 4 --layout stack
@@ -80,6 +80,7 @@ yabai -m rule --add app="Microsoft Remote Desktop" space=^6
 yabai -m rule --add app="AlDente" manage=off
 yabai -m rule --add app="App Store" manage=off
 yabai -m rule --add app="Cursor Pro" manage=off
+yabai -m rule --add app="Discord" manage=off
 yabai -m rule --add app="Finder" manage=off
 yabai -m rule --add app="iStat Menus" manage=off mouse_follows_focus=off
 yabai -m rule --add app="JetBrains Toolbox" manage=off mouse_follows_focus=off
