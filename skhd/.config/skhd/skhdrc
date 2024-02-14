@@ -79,7 +79,7 @@ shift + ctrl - j : yabai -m window --resize top:0:20
 # balance out tree of windows (resize to occupy same area)
 shift + ctrl - r : yabai -m space --balance
 
-# -- Window Management --
+# -- Yabai Management --
 ctrl + alt - s : yabai --start-service
 ctrl + alt - r : yabai --restart-service
 ctrl + alt - q : yabai --stop-service

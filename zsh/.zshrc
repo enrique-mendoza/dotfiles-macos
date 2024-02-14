@@ -14,9 +14,5 @@ plug "zap-zsh/fnm"
 plug "zap-zsh/zap-prompt"
 plug "zsh-users/zsh-syntax-highlighting"
 
-# Load and initialise completion system
-autoload -Uz compinit
-compinit
-
-# Load Angular CLI autocompletion.
-source <(ng completion script)
+# Completion System
+plug "$HOME/.config/zsh/completion.zsh"

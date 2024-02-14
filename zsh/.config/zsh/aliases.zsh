@@ -22,6 +22,9 @@ alias grep="grep --color=auto"
 alias df="df -h" # human-readable sizes
 alias free="free -m" # show sizes in MB
 
+# Most commands used
+alias mcu="history | awk '{print $2}' | sort | uniq -c | sort -nr | head -10"
+
 # Git
 alias g="git"
 
