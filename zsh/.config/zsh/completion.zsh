@@ -7,4 +7,4 @@ compinit
 # Load Angular CLI autocompletion.
 source <(ng completion script)
 
-eval "$(zoxide init zsh)"
+eval "$(zoxide init --cmd cd zsh)"
