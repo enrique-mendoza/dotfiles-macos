@@ -1,12 +1,12 @@
 #!/usr/bin/env sh
 
 # Custom lists (exa is unmaintained, use eza instead)
-# alias ls="exa --icons --color=always --group-directories-first"
-# alias lst="exa --icons --color=always --tree --level=2 --long"
-# alias ll="exa -alF --icons --color=always --group-directories-first"
-# alias la="exa -a --icons --color=always --group-directories-first"
-# alias l="exa -F --icons --color=always --group-directories-first"
-# alias l.="exa -a | egrep '^\.'"
+alias ls="eza --icons --color=always --group-directories-first"
+alias ll="eza -alF --icons --color=always --group-directories-first"
+alias la="eza -a --icons --color=always --group-directories-first"
+alias l="eza -F --icons --color=always --group-directories-first"
+alias l.="eza -a | egrep '^\.'"
+alias tree="eza --icons --color=always --tree --level=2 --long"
 
 # Confirm before overwriting something
 alias cp="cp -i"
