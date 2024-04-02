@@ -32,7 +32,7 @@
   ui = auto
 [core]
 	editor = nvim
-	excludesfile = ~/.gitignore
+	excludesFile = ~/.gitignore
 	ignorecase = false
 [filter "lfs"]
   clean = git-lfs clean -- %f
