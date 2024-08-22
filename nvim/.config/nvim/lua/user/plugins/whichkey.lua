@@ -351,6 +351,11 @@ function M.config()
       }
     },
     {
+      "<leader>gf",
+      "<cmd>Fugit2<cr>",
+      desc = "Git Fugit2",
+    },
+    {
       "<leader>gg",
       "<cmd>Neogit<CR>",
       desc = "Neogit",
@@ -661,7 +666,7 @@ function M.config()
       desc = "Rain",
       hidden = true,
     },
-    -- celullar
+    -- zen-mode
     {
       "<leader>z",
       "<cmd>ZenMode<CR>",
