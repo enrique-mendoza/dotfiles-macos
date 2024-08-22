@@ -1,9 +1,9 @@
-local M = require("user.themes.cyberdream")
+local M = require("user.themes.catppuccin")
 
 function M.config()
-  require("cyberdream").setup({})
+  require("catppuccin").setup({})
 
-  vim.cmd.colorscheme "cyberdream"
+  vim.cmd.colorscheme "catppuccin"
 end
 
 return M
