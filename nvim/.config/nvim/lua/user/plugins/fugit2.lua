@@ -15,4 +15,10 @@ local M = {
   cmd = { 'Fugit2', 'Fugit2Diff', 'Fugit2Graph' },
 }
 
+function M.config()
+  require("fugit2").setup({
+    libgit2_path = '/usr/local/opt/libgit2/lib/libgit2.dylib'
+  })
+end
+
 return M
