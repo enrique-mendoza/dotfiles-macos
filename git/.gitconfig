@@ -31,8 +31,8 @@
   status = auto
   ui = auto
 [core]
-	editor = nvim
-	ignorecase = false
+  editor = nvim
+  ignorecase = false
 [filter "lfs"]
   clean = git-lfs clean -- %f
   process = git-lfs filter-process
@@ -41,11 +41,13 @@
 [ghq]
   root = ~/.ghq
 [github]
-	user = enrique-mendoza
+  user = enrique-mendoza
+[merge]
+  ff = false
 [pull]
-	ff = true
+  ff = false
 [push]
   default = simple
 [user]
-	email = luis.mendoza@infotec.mx
-	name = Enrique Mendoza
+  email = luis.mendoza@infotec.mx
+  name = Enrique Mendoza
