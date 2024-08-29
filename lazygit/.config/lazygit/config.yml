@@ -1,22 +1,26 @@
 gui:
+  border: rounded
   theme:
     activeBorderColor:
-      - blue
-      - bold
+      - "#5ef1ff"
     inactiveBorderColor:
-      - white
+      - "#7b8496"
     optionsTextColor:
-      - blue
+      - "#3c4048"
+    searchingActiveBorderColor:
+      - "#ff5ef1"
     selectedLineBgColor:
-      - default # set to `default` to have no background colour
+      - "#3c4048" # set to `default` to have no background colour
     selectedRangeBgColor:
       - default
     cherryPickedCommitBgColor:
-      - cyan
+        - "#3c4048"
     cherryPickedCommitFgColor:
-      - blue
+        - "#ff5ea0"
     unstagedChangesColor:
-      - red
+        - "#ffbd5e"
+    defaultFgColor:
+        - "#ffffff"
   showFileTree: true # for rendering changes files in a tree format
   showListFooter: false # for seeing the '5 of 20' message in list panels
   showRandomTip: false

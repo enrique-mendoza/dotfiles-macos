@@ -45,7 +45,7 @@
 [merge]
   ff = false
 [pull]
-  ff = false
+  ff = true
 [push]
   default = simple
 [user]
