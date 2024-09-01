@@ -83,8 +83,8 @@ map <leader>n :nohlsearch<CR>
 
 let g:WhichKeyDesc_comment_by_line_comment = "<leader>/  Comment Toggle"
 let g:WhichKeyDesc_explorer = "<leader>e  Explorer"
-let g:WhichKeyDesc_split_horizontally = "<leader>h  Split Horizontally"
-let g:WhichKeyDesc_split_vertically = "<leader>v  Split Vertically"
+let g:WhichKeyDesc_split_horizontally = "<leader>h  Split Horizontally"
+let g:WhichKeyDesc_split_vertically = "<leader>v  Split Vertically"
 
 map <leader>/ <Action>(CommentByLineComment)
 nnoremap <leader>e :NERDTree<CR>
