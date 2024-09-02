@@ -57,6 +57,7 @@ yabai -m rule --add app="Google Chrome" space=^1
 # space 2: terminals
 yabai -m rule --add app="iTerm2" space=^2
 yabai -m rule --add app="kitty" space=^2
+yabai -m rule --add app="OneNote" space=^2
 
 # space 3: development
 yabai -m rule --add app="IntelliJ IDEA" space=^3
