@@ -1,9 +1,9 @@
-local M = require("user.themes.cyberdream")
+local M = require("user.themes.eldritch")
 
 function M.config()
-  require("cyberdream").setup({})
+  require("eldritch").setup({})
 
-  vim.cmd.colorscheme "cyberdream"
+  vim.cmd.colorscheme "eldritch"
 end
 
 return M
