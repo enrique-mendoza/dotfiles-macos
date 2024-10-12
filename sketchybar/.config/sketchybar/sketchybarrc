@@ -23,7 +23,7 @@ sketchybar --bar height=37        \
                  sticky=off       \
                  padding_left=10  \
                  padding_right=10 \
-                 color=$TRANSPARENT
+                 color=$SEMITRANSPARENT
 
 ##### Changing Defaults #####
 # We now change some default values, which are applied to all further items.
@@ -56,12 +56,12 @@ source $ITEMS_DIR/front_app.sh
 # source $ITEMS_DIR/media.sh
 
 ##### Adding Right Items #####
-source $ITEMS_DIR/clock.sh
-source $ITEMS_DIR/keyboard.sh
+source $ITEMS_DIR/calendar.sh
 source $ITEMS_DIR/battery.sh
-source $ITEMS_DIR/volume.sh
-source $ITEMS_DIR/cpu.sh
-source $ITEMS_DIR/brew.sh
+source $ITEMS_DIR/keyboard.sh
+# source $ITEMS_DIR/volume.sh
+# source $ITEMS_DIR/cpu.sh
+# source $ITEMS_DIR/brew.sh
 
 ##### Force all scripts to run the first time (never do this in a script) #####
 sketchybar --update

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export TRANSPARENT=0x00000000
-export SEMITRANSPARENT=1xff140c42
+export SEMITRANSPARENT=0x442a2f38
 export WHITE=0xffffffff
 export RED=0xffed8796
 export GREEN=0xffa6da95

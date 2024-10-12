@@ -1,4 +1,4 @@
-##!/bin/bash
+#!/bin/sh
 
 sketchybar --add item media e \
            --set media label.color=$ACCENT_COLOR \

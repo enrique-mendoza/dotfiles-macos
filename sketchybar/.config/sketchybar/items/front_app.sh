@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 sketchybar --add item front_app left \
            --set front_app       background.color=$TRANSPARENT \
