@@ -1,6 +1,6 @@
 #!/bin/sh
 
-source "$HOME/.config/sketchybar/themes/colors.sh"
+source "$CONFIG_DIR/colors.sh"
 
 COUNT=$(brew outdated | wc -l | tr -d ' ')
 
