@@ -17,7 +17,7 @@ source "$CONFIG_DIR/colors.sh" # Loads all defined colors
 # If you are looking for other colors, see the color picker:
 # https://felixkratz.github.io/SketchyBar/config/tricks#color-picker
 
-sketchybar --bar height=37        \
+sketchybar --bar height=25        \
                  blur_radius=30   \
                  position=top     \
                  sticky=off       \
@@ -31,13 +31,13 @@ sketchybar --bar height=37        \
 # https://felixkratz.github.io/SketchyBar/config/items
 
 default=(
-  icon.font="SF Pro:Semibold:15.0" 
+  icon.font="SF Pro:Semibold:13.0"
   icon.color=$WHITE                
-  label.font="SF Pro:Semibold:15.0"
+  label.font="SF Pro:Semibold:13.0"
   label.color=$WHITE               
   background.color=$TRANSPARENT
   background.corner_radius=5       
-  background.height=24             
+  background.height=20
   padding_left=0
   padding_right=0
   label.padding_left=4             
